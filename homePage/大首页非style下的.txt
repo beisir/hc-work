@@ -1,0 +1,5 @@
+﻿  大首页  
+         hm.baidu.com           BI的百度统计代码   https://jingyan.baidu.com/article/08b6a591afce9d14a9092241.html 
+         logrecordservice.js    用户行为分析脚本   style/js/module/common/
+         uba.js                 加载jQuery并开始初始化用户行为分析功能   style/js/projects/UBA/dist/js/ 
+         

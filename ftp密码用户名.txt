@@ -1,0 +1,4 @@
+﻿ciis.hcgroup.com 
+
+1.文件上传方式ftp   ftp地址：ftp.hc360.com 用户名:CiiS/3Q2vK5F9gW
+2.访问浏览  //ciis.hcgroup.com/文件名  

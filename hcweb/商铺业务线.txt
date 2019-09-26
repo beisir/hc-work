@@ -1,0 +1,20 @@
+﻿一、shop3.0
+	1.npm run build打包之后到本地dist目录，把打包后的目录放在对应的ftp工程下，每一次上线都要把dist下除了html和json文件夹下的文件全部放到ftp上，
+如果遇到更改src/data文件夹下html文件时，打包之后需要吧dist下html文件夹也放到ftp上， 放在ftp上的包路径：  ftp工程名/style/js/module/shop3.0/dist/...
+
+二、聚精彩
+	1.使用的技术栈是Vue框架，项目源码可以在git上下载，名称为Wechat.jjc
+
+三、M站卖家中心
+	1.使用的技术栈是Vue框架，项目源码可以在git上下载，名称为m.user.center
+
+
+
+FTP账号：
+192.168.249.2 csftp01/ftp01asd
+
+
+svn账号：http://192.168.44.59:18080/svn/mmt4/MS-MobileMMt/trunk/MS-MobileMMT
+
+
+清除CDN缓存工具地址：http://cache.org.hc360.com/www_cache_refgui/www.htm

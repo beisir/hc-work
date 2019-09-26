@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="http://10.158.33.72:8888/jquery.js"></script>
+    <script src="./util.js"></script>
+
+
+    <script>
+        function bundleFuntion () {
+            return new bundleFuntion.prototype.init();
+        }
+
+        bundleFuntion.prototype = {
+            init: function () {
+
+            }
+        }
+        bundleFuntion.prototype.init.prototype = bundleFuntion.prototype;
+        
+    
+    </script>
+
+
+</body>
+</html>

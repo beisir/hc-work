@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width">
+  <style media="screen">
+      .reds{
+        width: 20px;
+        height: 20px;
+        background: red;
+        margin-bottom: 10px;
+      }
+      #qrcode a{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: #000;
+        transition:.6s;
+      }
+    #qrcode:hover a {
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2)
+    }
+#dialog{
+  width: 100px;
+  height: 70px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-left: -50px;
+  margin-top: -35px;
+  background: #000;
+  /*opacity: .8;*/
+  color: white;
+  transition: .6s;
+  /*transform: scale(0);*/
+  transform: translate3d(-300px,-300px,0);
+  opacity: 0;
+}
+#dialog.top{
+  /*transform: scale(1.2);*/
+  transform: translate3d(50%,50%,0);
+
+  opacity: 0.8;
+}
+
+
+  </style>
+
+</head>
+<body>
+  <div class="red"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+<ul>
+  <li class="reds"></li>
+  <li class="reds"></li>
+  <li class="reds"></li>
+  <li class="reds"></li>
+  <li class="reds"></li>
+</ul>
+<div id="qrcode">
+  <a href="#"></a>
+</div>
+<div id="dialog">
+  hellow ?
+</div>
+<button type="button" id="btn" name="button">hello</button>
+<script type="text/javascript" src="./js/util.js"></script>
+<!-- <script type="text/javascript" src="./libs/qrcodejs/qrcode.js"></script> -->
+<script type="text/javascript" >
+
+document.querySelector('#btn').addEventListener('click',function (){
+  document.querySelector('#dialog').className = 'top';
+},false);
+
+document.querySelector('#dialog').addEventListener('click',function (){
+  this.className = '';
+},false)
+
+
+// console.log(Util.isCHS('sksaj'))
+console.log('$$ ``'.charCodeAt())
+
+
+
+
+
+
+
+
+
+// Util.shareFn({
+//   links:'b2b.hc360.com/h5/index.html?u=anfang01&t=1&d=1',
+//   ele:document.querySelector('#qrcode'),
+//   // id:1,
+//   text:'ssssss',
+//   pic:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511776226022&di=cfc7ce243c366389a34ee6206825ba77&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F9825bc315c6034a88f134c6cc11349540823766e.jpg'
+// })
+// js 生成二维码
+// var qrcode = new QRCode(document.getElementById("qrcode"), {
+// 	text: "http://jindo.dev.naver.com/collie",
+// 	width: 50,
+// 	height: 50,
+// 	colorDark : "#000000",
+// 	colorLight : "#ffffff",
+// 	correctLevel : QRCode.CorrectLevel.H
+// });
+// console.log(Util.handle(['a','aa','a','b','b',1,1,1,1,2,2,3,1,1,4,4,3]));
+// console.log(Util.getQueryString('id'))
+// console.log(Util.getByClass(document.body,'red'))
+
+</script>
+</body>
+</html>
